@@ -30,4 +30,4 @@ COPY script/ /
 WORKDIR /config
 
 
-CMD ["bash", "run.sh"]
+CMD ["ls"]
