@@ -26,8 +26,8 @@ RUN apt-get update && \
 EXPOSE 9117
 USER jackett
 VOLUME ["/config", "/data/"]
-COPY script/ /
-WORKDIR /config
 
+WORKDIR /config
+COPY script/ /config/
 
 CMD ["pwd"]
