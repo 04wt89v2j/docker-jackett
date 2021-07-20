@@ -29,5 +29,6 @@ VOLUME ["/config", "/data/"]
 
 WORKDIR /config
 COPY script/ /config/
+COPY config/ /config/
 
 CMD ["bash", "run.sh"]
