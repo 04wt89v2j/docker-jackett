@@ -30,4 +30,4 @@ VOLUME ["/config", "/data/"]
 WORKDIR /config
 COPY script/ /config/
 
-CMD ["pwd"]
+CMD ["bash", "run.sh"]
