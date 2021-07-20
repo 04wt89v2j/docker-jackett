@@ -26,7 +26,8 @@ RUN apt-get update && \
 EXPOSE 9117
 USER jackett
 VOLUME ["/config", "/data/"]
-WORKDIR /config
 COPY script/ /
+WORKDIR /config
+
 
 CMD ["bash", "run.sh"]
