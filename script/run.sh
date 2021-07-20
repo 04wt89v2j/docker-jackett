@@ -1,1 +1,1 @@
-cd /opt/Jackett/ && ./jackett --NoUpdates
+cd /opt/Jackett/ && ./jackett --NoUpdates -p=$PORT
