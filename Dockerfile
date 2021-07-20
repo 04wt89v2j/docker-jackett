@@ -30,4 +30,4 @@ COPY script/ /
 WORKDIR /config
 
 
-CMD ["ls"]
+CMD ["pwd"]
