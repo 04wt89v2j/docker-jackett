@@ -27,5 +27,6 @@ EXPOSE 9117
 USER jackett
 VOLUME ["/config", "/data/"]
 WORKDIR /config
+COPY script/ /
 
-CMD ["/opt/Jackett/jackett", "--NoUpdates"]
+CMD ["bash", "run.sh"]
